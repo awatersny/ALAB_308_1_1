@@ -54,6 +54,7 @@ let firstIsBiggerThanLast = n1 > n4;
 //    Subtract the first number from the second number.
 let diff = n2 - n1;
 //    Multiply the result by the third number.
-let prod = diff * n3
-//    TODO Find the remainder of dividing the result by the fourth number.
+let prod = diff * n3;
+//    Find the remainder of dividing the result by the fourth number.
+let remainder = prod % 4;
 //  TODO Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
