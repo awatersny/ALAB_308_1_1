@@ -52,9 +52,27 @@ let isAllDivisibleBy5 = n1%5 && n2%5 && n3%5 && n4%5;
 let firstIsBiggerThanLast = n1 > n4;
 //  TODO Accomplish the following arithmetic chain:
 //    Subtract the first number from the second number.
-let diff = n2 - n1;
+const n1MinusN2 = n2 - n1;
 //    Multiply the result by the third number.
-let prod = diff * n3;
+const n1MinusN2TimesN3 = n1MinusN2 * n3;
 //    Find the remainder of dividing the result by the fourth number.
-let remainder = prod % 4;
+let remainder = n1MinusN2TimesN3 % 4;
 //  TODO Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+
+// Part 2: Practical Math
+// Let’s look at a more practical scenario.
+// You are planning a cross-country road trip!
+// The distance of the trip, in total, is 1,500 miles.
+// Your car’s fuel efficiency is as follows:
+// At 55 miles per hour, you get 30 miles per gallon.
+// At 60 miles per hour, you get 28 miles per gallon.
+// At 75 miles per hour, you get 23 miles per gallon.
+// You have a fuel budget of $175.
+// The average cost of fuel is $3 per gallon.
+
+//TODO Set up a program to answer the following questions:
+//  TODO How many gallons of fuel will you need for the entire trip?
+//  TODO Will your budget be enough to cover the fuel expense?
+//  TODO How long will the trip take, in hours?
+//TODO Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+//TODO Log the results of your calculations using string concatenation or template literals.
