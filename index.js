@@ -52,8 +52,8 @@ let isAllDivisibleBy5 = n1%5 && n2%5 && n3%5 && n4%5;
 let firstIsBiggerThanLast = n1 > n4;
 //  TODO Accomplish the following arithmetic chain:
 //    Subtract the first number from the second number.
-let result = n2 - n1;
+let diff = n2 - n1;
 //    Multiply the result by the third number.
-result *= n3
+let prod = diff * n3
 //    TODO Find the remainder of dividing the result by the fourth number.
 //  TODO Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
