@@ -71,14 +71,17 @@ let remainder = n1MinusN2TimesN3 % 4;
 // The average cost of fuel is $3 per gallon.
 
 //TODO Set up a program to answer the following questions:
-//  TODO How many gallons of fuel will you need for the entire trip?
+//  How many gallons of fuel will you need for the entire trip?
 const miles = 1500;
 const gallonsAt55 = miles/30; //= 50
 const gallonsAt60 = miles/28; //= 53.57142857142857
 const gallonsAt75 = miles/23; //= 65.21739130434783
-//  TODO Will your budget be enough to cover the fuel expense?
+//  Will your budget be enough to cover the fuel expense?
+const costAt55 = gallonsAt55 * 3; //= $150 Yes
+const costAt60 = gallonsAt60 * 3; //= $160.71 Yes
+const costAt75 = gallonsAt75 * 3; //= $195.65 No
 //  TODO How long will the trip take, in hours?
 //TODO Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
 //TODO Log the results of your calculations using string concatenation or template literals.
 
-console.log(gallonsAt75)
+console.log(costAt75)
