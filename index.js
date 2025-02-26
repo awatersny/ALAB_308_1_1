@@ -50,7 +50,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 let isAllDivisibleBy5 = n1%5 && n2%5 && n3%5 && n4%5;
 //  Check if the first number is larger than the last. Cache the result in a variable.
 let firstIsBiggerThanLast = n1 > n4;
-//  TODO Accomplish the following arithmetic chain:
+//  Accomplish the following arithmetic chain:
 //    Subtract the first number from the second number.
 const n1MinusN2 = n2 - n1;
 //    Multiply the result by the third number.
@@ -86,4 +86,4 @@ const durationAt60 = miles/60; //= 25hrs
 const durationAt75 = miles/75; //= 20hrs
 // Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
 // Log the results of your calculations using string concatenation or template literals.
-console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`)
+console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`);
