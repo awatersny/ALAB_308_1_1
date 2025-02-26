@@ -81,7 +81,10 @@ const costAt55 = gallonsAt55 * 3; //= $150 Yes
 const costAt60 = gallonsAt60 * 3; //= $160.71 Yes
 const costAt75 = gallonsAt75 * 3; //= $195.65 No
 //  TODO How long will the trip take, in hours?
+const durationAt55 = miles/55; //= 27hrs
+const durationAt60 = miles/60; //= 25hrs
+const durationAt75 = miles/75; //= 20hrs
 //TODO Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
 //TODO Log the results of your calculations using string concatenation or template literals.
 
-console.log(costAt75)
+console.log(durationAt75)
