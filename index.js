@@ -70,7 +70,7 @@ let remainder = n1MinusN2TimesN3 % 4;
 // You have a fuel budget of $175.
 // The average cost of fuel is $3 per gallon.
 
-//TODO Set up a program to answer the following questions:
+// Set up a program to answer the following questions:
 //  How many gallons of fuel will you need for the entire trip?
 const miles = 1500;
 const gallonsAt55 = miles/30; //= 50
@@ -80,11 +80,10 @@ const gallonsAt75 = miles/23; //= 65.21739130434783
 const costAt55 = gallonsAt55 * 3; //= $150 Yes
 const costAt60 = gallonsAt60 * 3; //= $160.71 Yes
 const costAt75 = gallonsAt75 * 3; //= $195.65 No
-//  TODO How long will the trip take, in hours?
+//  How long will the trip take, in hours?
 const durationAt55 = miles/55; //= 27hrs
 const durationAt60 = miles/60; //= 25hrs
 const durationAt75 = miles/75; //= 20hrs
-//TODO Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
-//TODO Log the results of your calculations using string concatenation or template literals.
-
-console.log(durationAt75)
+// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+// Log the results of your calculations using string concatenation or template literals.
+console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`)
