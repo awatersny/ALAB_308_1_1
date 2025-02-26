@@ -59,7 +59,6 @@ const n1MinusN2TimesN3 = n1MinusN2 * n3;
 let remainder = n1MinusN2TimesN3 % 4;
 //  Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
 const isNotOver25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25
-console.log(isNotOver25, n3)
 
 // Part 2: Practical Math
 // Let’s look at a more practical scenario.
@@ -88,4 +87,4 @@ const durationAt60 = miles/60; //= 25hrs
 const durationAt75 = miles/75; //= 20hrs
 // Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
 // Log the results of your calculations using string concatenation or template literals.
-// console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`);
+console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`);
