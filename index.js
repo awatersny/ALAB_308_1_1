@@ -33,7 +33,7 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+// console.log(isValid);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -45,7 +45,7 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
 
 // Part 1: Math Problems
-//TODO Implement the following:
+//Implement the following:
 //  Check if all numbers are divisible by 5. Cache the result in a variable.
 let isAllDivisibleBy5 = n1%5 && n2%5 && n3%5 && n4%5;
 //  Check if the first number is larger than the last. Cache the result in a variable.
@@ -57,7 +57,9 @@ const n1MinusN2 = n2 - n1;
 const n1MinusN2TimesN3 = n1MinusN2 * n3;
 //    Find the remainder of dividing the result by the fourth number.
 let remainder = n1MinusN2TimesN3 % 4;
-//  TODO Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+//  Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.
+const isNotOver25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25
+console.log(isNotOver25, n3)
 
 // Part 2: Practical Math
 // Let’s look at a more practical scenario.
@@ -86,4 +88,4 @@ const durationAt60 = miles/60; //= 25hrs
 const durationAt75 = miles/75; //= 20hrs
 // Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
 // Log the results of your calculations using string concatenation or template literals.
-console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`);
+// console.log(`It makes the most sense to travel at 60mph. It uses ${gallonsAt60} gallons of fuel which will cost you \$${costAt60} and the duration of the trip will be ${durationAt60} hours long.`);
